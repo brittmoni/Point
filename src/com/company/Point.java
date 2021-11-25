@@ -30,14 +30,20 @@ public class Point {
   }
 
   public double distance() {
-    return 1;
+    double totalDistance = Math.sqrt((getX() - getX()) * (getX() - getX()) +
+        (getY() - getY()) * (getY() - getY()));
+    return totalDistance;
   }
 
   public double distance(int x, int y) {
-    return 1;
+    double totalDistance = Math.sqrt((getX() - getX()) * (getX() - getX()) +
+        (getY() - getY()) * (getY() - getY()));
+    return totalDistance;
   }
 
-  public double distance(Point point) {
-    return 1;
+  public double distance(Point Point) {
+    double totalDistance = Math.sqrt((getX() - getX()) * (getX() - getX()) +
+        (getY() - getY()) * (getY() - getY()));
+    return totalDistance;
   }
 }
