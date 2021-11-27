@@ -30,20 +30,20 @@ public class Point {
   }
 
   public double distance() {
-    double totalDistance = Math.sqrt((getX() - getX()) * (getX() - getX()) +
-        (getY() - getY()) * (getY() - getY()));
+    double totalDistance = Math.sqrt((-this.getX()) * (-this.getX()) +
+        (-this.getY()) * (-this.getY()));
     return totalDistance;
   }
 
   public double distance(int x, int y) {
-    double totalDistance = Math.sqrt((getX() - getX()) * (getX() - getX()) +
-        (getY() - getY()) * (getY() - getY()));
+    double totalDistance = Math.sqrt((x - this.getX()) * (x - this.getX()) +
+        (y - this.getY()) * (y - this.getY()));
     return totalDistance;
   }
 
-  public double distance(Point Point) {
-    double totalDistance = Math.sqrt((getX() - getX()) * (getX() - getX()) +
-        (getY() - getY()) * (getY() - getY()));
+  public double distance(Point second) {
+    double totalDistance = Math.sqrt((second.getX() - this.getX()) * (second.getX() - this.getX()) +
+        (second.getY() - this.getY()) * (second.getY() - this.getY()));
     return totalDistance;
   }
 }
